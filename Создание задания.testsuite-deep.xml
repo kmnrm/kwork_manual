@@ -1,0 +1,4444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="21928" name="Создание задания" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Тесты, проверяющие данные, вводимые пользователем при создании задания.</p>
+]]></details> 
+
+<testcase internalid="21929" name="Переход к созданию задания со входом в профиль">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[7_kmnrm-1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">1. </span><a class="waffle-rich-text-link" href="http://kwork.ru/" style="color: rgb(17, 85, 204); font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">http://kwork.ru </a></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">3. Пользователь залогинен.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Нажимаем на кнопку &quot;СОЗДАТЬ ЗАДАНИЕ&quot; в шапке сайта.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Пользователь перешел на страницу https://kwork.ru/new_project .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21932" name="Переход к созданию задания без входа в профиль">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[7_kmnrm-2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">1. </span><a class="waffle-rich-text-link" href="http://kwork.ru/" style="color: rgb(17, 85, 204); font-family: Arial; font-size: 13px; white-space: pre-wrap; text-decoration-skip-ink: none;">http://kwork.ru</a></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Нажимаем на кнопку &quot;СОЗДАТЬ ЗАДАНИЕ&quot; в шапке сайта.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Пользователь перешел на страницу https://kwork.ru/new_project .</p>
+<p>
+	Над кнопкой &quot;Разместить&quot; появилось поле &quot;Адрес электронной почты&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21935" name="Создание задания с именем без грамматических ошибок">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[7_kmnrm-3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot;&nbsp;ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21943" name="Создание задания с именем менее 55 символов">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[7_kmnrm-4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21953" name="Создание задания с не менее 50% кириллицы в имени">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[7_kmnrm-5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	3. Пользователь залогинен.</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<strong>Данные для заполнения</strong></div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Тестовое название задания: &quot;Разработать разработку develop development&quot;&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Тестовая цена за задание (рублей): 1000</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">В поле введено тестовое название задания.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21962" name="Создание задания с описанием менее 1500 символов">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[7_kmnrm-6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21972" name="Создание задания с описанием без грамматических ошибок">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[7_kmnrm-7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21981" name="Создание задания с не менее 50% кириллицы в описании">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[7_kmnrm-8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок, ага. There are less than one thousand and five hundreds symbols in this text typed in English Hello world.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21990" name="Создание задания с ценой в диапазоне 500-500000 рублей">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[7_kmnrm-9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21999" name="Создание задания с выбранной рубрикой">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[7_kmnrm-10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22008" name="Создание задания с одновременной загрузкой до 10 файлов менее 30 МБ">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[7_kmnrm-11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+<div>
+	Файлы для загрузки:</div>
+<div>
+	test1.jpg</div>
+<div>
+	<img alt="test1" src="https://sun1-92.userapi.com/c635106/v635106665/3f407/XKaUoocOjAo.jpg" style="width: 100px; height: 56px; float: left;" /></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	test2.jpg</div>
+<div>
+	<img alt="test2.jpg" src="https://sun1-23.userapi.com/c635106/v635106823/a0a7e/N8RPqU0vPP0.jpg" style="width: 100px; height: 90px;" /></div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть &quot;Прикрепить файлы&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Открылось окна &quot;Открытие&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать файлы &quot;test.jpg&quot;, &quot;test2.jpg&quot;. Кликнуть &quot;Открыть&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Файлы загрузились и прикрепились к заданию.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22052" name="Создание задания без загрузки файлов">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[7_kmnrm-12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22061" name="Создание задания с указанием менее 10 цифр в названии">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[7_kmnrm-13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку 88002000&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22070" name="Создание задания с указанием менее 10 цифр в описании">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[7_kmnrm-14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22080" name="Вывод всплывающего пояснения как назвать задание">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[7_kmnrm-15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Текстовая подсказка: &quot;Укажите в заголовке главную задачу&quot;</div>
+<div>
+	<div>
+		Примеры хороших заголовков (изображение):</div>
+	<div>
+		<img alt="" src="https://sun9-38.userapi.com/aSl_tUleX33l4QfoTgzPvO88-Cvsk9M50GPmqA/paqWSPw2CeQ.jpg" style="width: 100px; height: 124px; float: left;" /></div>
+</div>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; навести курсор на иконку &quot;?&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Над иконкой появилась текстовая подсказка.</div>
+<div>
+	Справа от поля появились примеры хороших заголовков с изображением</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22083" name="Вывод всплывающего пояснения как описать задание">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[7_kmnrm-16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Текстовая подсказка: &quot;Опишите услуги, которые вам нужны. Включите в описание важные аспекты.&quot;</div>
+<div>
+	Подсказка-изображение:</div>
+<div>
+	<img alt="" src="https://sun9-20.userapi.com/v5VujrgxPxSq3d-EAvx4BpJHIPt4KAbtxUPo5Q/T04hWdMcmdQ.jpg" style="width: 100px; height: 125px;" /></div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; навести курсор на иконку &quot;?&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Над иконкой появилась текстовая подсказка.</div>
+<div>
+	Справа от поля появилась подсказка-изображение.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22086" name="Создание задания без готовности рассмотреть цену выше">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[7_kmnrm-17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Убрать check напротив &quot;Готов рассмотреть предложения с ценой выше&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Появилось предупреждение над кнопкой разместить. Текст предупреждения:&nbsp;&quot;Мы рекомендуем снимать опцию только в крайнем случае, если вы уверены, что точно оценили стоимость задачи. В противном случае вы рискуете не получить хорошие предложения.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22096" name="Создание задания с именем с грамматическими ошибками">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[7_kmnrm-18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания:&nbsp;<u>&quot;Разработать раз3работку&quot;&nbsp;</u></div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Необходимо исправить ошибки или опечатки в тексте. Слова с ошибками подчеркнуты красным.&quot;</div>
+<div>
+	Слово с ошибкой в поле &quot;Основная задача&quot; подчеркнуто красным.</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22105" name="Создание задания с именем более 55 символов">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[7_kmnrm-19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку разрабатывающего разработчка разработчиком&quot;</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; вводим тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Название в поле &quot;Основная задача&quot; усекается до длины 55 символов сразу же после введения 56-го символа.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22108" name="Создание задания с описанием более 1500 символов">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[7_kmnrm-20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+	1. http://kwork.ru/new_project</p>
+<p>
+	&nbsp;</p>
+<p>
+	Данные для заполнения:</p>
+<p>
+	Тестовое описание:&nbsp;</p>
+<p>
+	&quot;Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает свое высокое призвание и будет верен ему. Вот одно, во что я верю. Нашему доброму и чудному государю предстоит величайшая роль в мире, и он так добродетелен и хорош, что Бог не оставит его, и он исполнит свое призвание задавить гидру революции, которая теперь еще ужаснее в лице этого убийцы и злодея. Мы одни должны искупить кровь праведника. На кого нам надеяться, я вас спрашиваю?.. Англия с своим коммерческим духом не поймет и не может понять всю высоту души императора Александра. Она отказалась очистить Мальту. Она хочет видеть, ищет заднюю мысль наших действий. Что они сказали Новосильцеву? Ничего. Они не поняли, они не могли понять самоотвержения нашего императора, который ничего не хочет для себя и все хочет для блага мира. И что они обещали? Ничего. И что обещали, и того не будет! Пруссия уже объявила, что Бонапарте непобедим и что вся Европа ничего не может против него... И я не верю ни в одном слове ни Гарденбергу, ни Гаугвицу. Cette fameuse neutralit&eacute; prussienne, ce n&#39;est qu&#39;un pi&egrave;ge 9. Я верю в одного Бога и в высокую судьбу нашего милого императора. Он спасет Европу!.. &mdash; Она вдруг остановилась с улыбкой насмешки над своею горячностью. &mdash; Я думаю, &mdash; сказал князь, улыбаясь, &mdash; что, ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю? &mdash; Сейчас. A propos, &mdash; прибавила она, опять успокоиваясь, &mdash; нынче у меня два очень интересные человека, le vicomte de Mortemart, il est alli&eacute; aux Montmorency par les Rohans 10, одна из лучших фамилий Франции. Это один из хороших эмигрантов, из настоящих. И потом l&#39;abb&eacute; Morio; 11 вы знаете этот глубокий ум? Он был принят государем. Вы знаете? &mdash; А! Я очень рад буду, &mdash; сказал князь. &mdash; Скажите, &mdash; прибавил он, как будто только что вспомнив что-то и особенно-небрежно, тогда как то, о чем он спрашивал, было главной целью его посещения, &mdash; правда, что l&#39;imp&eacute;ratrice-m&egrave;re 12 желает назначения барона Функе первым секретарем в Вену? C&#39;est un pauvre sire, ce baron, &agrave; ce qu&#39;il para&icirc;t 13. &mdash; Князь Василий желал определить сына на это место, которое через императрицу Марию Феодоровну старались доставить барону. Анна Павловна почти закрыла глаза в знак того, что ни она, ни кто другой не могут судить про то, что угодно или нравится императрице. &mdash; Monsieur le baron de Funke a &eacute;t&eacute; recommand&eacute; &agrave; l&#39;imp&eacute;ratrice-m&egrave;re par sa soeur 14, &mdash; только сказала она грустным, сухим тоном. В то время как Анна Павловна назвала императрицу, лицо ее вдруг представило глубокое и искреннее выражение преданности и уважения, соединенное с грустью, что с ней бывало каждый раз, когда она в разговоре упоминала о своей высокой покровительнице. Она сказала, что ее величество изволила оказать барону Функе beaucoup d&#39;estime 15, и опять взгляд ее подернулся грустью. Князь равнодушно замолк, Анна Павловна, с свойственною ей придворною и женскою ловкостью и быстротою такта, захотела и щелкануть князя за то, что он дерзнул так отозваться о лице, рекомендованном императрице, и в то же время утешить его. &mdash; Mais &agrave; propos de votre famille, &mdash; сказала она, &mdash; знаете ли, что ваша дочь, с тех пор как выезжает, fait les d&eacute;lices de tout le monde. On la trouve belle comme le jour 16. Князь наклонился в знак уважения и признательности. &mdash; Я часто думаю, &mdash; продолжала Анна Павловна после минутного молчания, придвигаясь к князю и ласково улыбаясь ему, как будто выказывая этим, что политические и светские разговоры кончены и теперь начинается задушевный, &mdash; я часто думаю, как иногда несправедливо распределяется счастие жизни. За что вам дала судьба таких двух славных детей (исключая Анатоля, вашего меньшого, я его не люблю, &mdash; вставила она безапелляционно, приподняв брови), &mdash; таких прелестных детей? А вы, право, менее всех цените их и потому их не стоите.&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Описание усекается до длины 1500 символов сразу же после введения 1501-го символа.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22111" name="Создание задания с менее 50% кириллицы в описании">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[7_kmnrm-21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок, ага<br />
+	There are less than one thousand and five hundreds symbols in this text typed in English Goodbye Earth Hello Venus I am a Jupiter&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Детальное описание задачи&quot; появилось сообщение об ошибке: &quot;Текст должен быть на русском языке.&quot;</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22120" name="Создание задания с менее 50% кириллицы в названии">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[7_kmnrm-22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать to develop the development of the develoing developers&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Текст должен быть на русском языке.&quot;</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22131" name="Создание задания с загрузкой одновременно более 10 файлов">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[7_kmnrm-24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+	http://kwork.ru/new_project</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Данные для заполнения</strong></p>
+<p>
+	Фотоальбом test_imgs: все изображения из фотоальбома https://vk.com/album-6726778_264994741</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть &quot;Прикрепить файлы&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Открылось окно &quot;Открытие&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать файлы из фотоальбома test_imgs. Кликнуть &quot;Открыть&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Из&nbsp; test_imgs загрузились только файлы 1 - 10. Кнопка &quot;Прикрепить файлы&quot; исчезла.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22139" name="Создание задания с превышением лимита 30 МБ для файлов">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[7_kmnrm-25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	http://kwork.ru/new_project</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения:</div>
+<div>
+	Файл test4:&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть &quot;Прикрепить файлы&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Открылось окно &quot;Открытие&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать файл test4. Кликнуть &quot;Открыть&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Кнопка &quot;Прикрепить файлы&quot; изменила название на &quot;Прикрепить еще файл&quot;</div>
+<div>
+	Под кнопкой &quot;Прикрепить еще файл&quot; появилось название файла test4&nbsp;</div>
+<div>
+	Под названием файла появилось предупреждение: &quot;Файл больше 30Мб не отправится. Используйте файлообменник, например, Яндекс.Диск.&quot;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22143" name="Создание задания с ценой более 500000 рублей">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[7_kmnrm-26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 500001</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.&nbsp;Под полем появлиось предупреждение &quot;Допустимая цена от 500 до 500 000 руб.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Пользователь остался на странице http://kwork.ru/new_project Создание задания не завершено.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22156" name="Создание задания с ценой менее 500 рублей">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[7_kmnrm-27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 499</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.&nbsp;Под полем появлиось предупреждение &quot;Допустимая цена от 500 до 500 000 руб.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь остался на странице http://kwork.ru/new_project</div>
+<div>
+	Создание задания не завершено.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22165" name="Создание задания без указания цены">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[7_kmnrm-28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь остался на странице http://kwork.ru/new_project</div>
+<div>
+	Под полем цены появилось предупреждение &quot;Введите цену&quot;</div>
+<div>
+	Создание задания не завершено.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22175" name="Указание более 10 символов в описании">
+	<node_order><![CDATA[27]]></node_order>
+	<externalid><![CDATA[7_kmnrm-29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Данные для заполнения</strong></div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку 8800200600&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; вводим тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Под полем описания появилось предупреждение: &quot;Общение и заказы за пределами Kwork несут высокий риск мошенничества! Передача контактных данных запрещена правилами сайта.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22854" name="Создание задания с именем длиной 0 символов (кэ)">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[7_kmnrm-64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	3. Пользователь залогинен.</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<strong>Данные для заполнения</strong></div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Тестовая цена за задание (рублей): 1000</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div style="margin: 0px; padding: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Введите название проекта&quot;.</p>
+<p>
+	Создание задания не завершено. Пользователь остался на странице <a href="https://kwork.ru/new_project">https://kwork.ru/new_project</a></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22862" name="Создание задания с именем длиной 1 символов (кэ)">
+	<node_order><![CDATA[29]]></node_order>
+	<externalid><![CDATA[7_kmnrm-65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Ы&quot;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Название не может состоять из одной буквы&quot;.</p>
+<p>
+	Задание не создано.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22870" name="Создание задания с именем длиной 55 символов (кэ)">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[7_kmnrm-66]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку разработку разработку разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания. Счетчик символов изменил цвет на красный.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22879" name="Создание задания с именем длиной 56 символов (кэ)">
+	<node_order><![CDATA[31]]></node_order>
+	<externalid><![CDATA[7_kmnrm-67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку разрабатывающего разработчка разработчиком&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; вводим тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Название в поле &quot;Основная задача&quot; усекается до длины 55 символов сразу же после введения 56-го символа.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22882" name="Создание задания с ценой 0 рублей (кэ)">
+	<node_order><![CDATA[32]]></node_order>
+	<externalid><![CDATA[7_kmnrm-68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 0</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.&nbsp;Под полем появлиось предупреждение &quot;Допустимая цена от 500 до 500 000 руб.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь остался на странице http://kwork.ru/new_project</div>
+<div>
+	Создание задания не завершено.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22891" name="Создание задания с ценой 499 рублей (кэ)">
+	<node_order><![CDATA[33]]></node_order>
+	<externalid><![CDATA[7_kmnrm-69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 499</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.&nbsp;Под полем появлиось предупреждение &quot;Допустимая цена от 500 до 500 000 руб.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь остался на странице http://kwork.ru/new_project</div>
+<div>
+	Создание задания не завершено.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22900" name="Создание задания с ценой 500 рублей (кэ)">
+	<node_order><![CDATA[34]]></node_order>
+	<externalid><![CDATA[7_kmnrm-70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 500</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22909" name="Создание задания с ценой 500000 рублей (кэ)">
+	<node_order><![CDATA[35]]></node_order>
+	<externalid><![CDATA[7_kmnrm-71]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 500000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22918" name="Создание задания с ценой 500001 рублей (кэ)">
+	<node_order><![CDATA[36]]></node_order>
+	<externalid><![CDATA[7_kmnrm-72]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 500001</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.&nbsp;Под полем появлиось предупреждение &quot;Допустимая цена от 500 до 500 000 руб.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Пользователь остался на странице http://kwork.ru/new_project Создание задания не завершено.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22927" name="Создание задания с ценой 500.1 рублей (кэ)">
+	<node_order><![CDATA[37]]></node_order>
+	<externalid><![CDATA[7_kmnrm-73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовая цена за задание (рублей): 500.1</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Ввод символа &quot;.&quot; игнорируется. В поле введется сумма &quot;5001&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22930" name="Создание задания с ценой 500,1 рублей (кэ)">
+	<node_order><![CDATA[38]]></node_order>
+	<externalid><![CDATA[7_kmnrm-74]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовая цена за задание (рублей): 500,1</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Ввод символа &quot;,&quot; игнорируется. В поле введется сумма &quot;5001&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22933" name="Создание задания с ценой &quot;500 рублей 10 коппеек&quot; (кэ)">
+	<node_order><![CDATA[39]]></node_order>
+	<externalid><![CDATA[7_kmnrm-75]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовая цена за задание: 500 рублей 10 коппеек</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Ввод символов, не являющихся цифрами, игнорируется. В поле введется сумма &quot;50010&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22936" name="Создание задания с 0% кириллицы в названии (кэ)">
+	<node_order><![CDATA[40]]></node_order>
+	<externalid><![CDATA[7_kmnrm-76]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания (45 символов и 6 пробелов): &quot;Develop the development of the develoing developers&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Текст должен быть на русском языке.&quot;</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22945" name="Создание задания с ~49% кириллицы в названии (кэ)">
+	<node_order><![CDATA[41]]></node_order>
+	<externalid><![CDATA[7_kmnrm-77]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания (21 из 43 символов кириллицы): &quot;Разработать разработку develop development hits&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Основная задача&quot; появилось сообщение об ошибке: &quot;Текст должен быть на русском языке.&quot;</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22954" name="Создание задания с 50% кириллицы в названии (кэ)">
+	<node_order><![CDATA[42]]></node_order>
+	<externalid><![CDATA[7_kmnrm-78]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания (21 из 42 символов кириллицы): &quot;Разработать разработку develop development hit&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее символов на русском языке и без грамматических ошибок&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22963" name="Создание задания с 100% кириллицы в названии (кэ)">
+	<node_order><![CDATA[43]]></node_order>
+	<externalid><![CDATA[7_kmnrm-79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания (21 из 21 кириллических символов и 1 пробел): &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;Это тестовое описание задания длиной менее 1500 символов на русском языке без грамматических ошибок.&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22972" name="Создание задания с описанием длиной 0 символов (кэ)">
+	<node_order><![CDATA[44]]></node_order>
+	<externalid><![CDATA[7_kmnrm-80]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Под полем &quot;Детальное описание&quot; появилось сообщение об ошибке: &quot;Введите описание проекта&quot;</div>
+<div>
+	Задание не создано.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22980" name="Создание задания с описанием длиной 1 символов (кэ)">
+	<node_order><![CDATA[45]]></node_order>
+	<externalid><![CDATA[7_kmnrm-81]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;&nbsp;</div>
+<div>
+	Тестовое описание задания: &quot;а&quot;</div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Под полем &quot;Детальное описание&quot; появилось сообщение об ошибке: &quot;Описание не может состоять из одной буквы&quot;.</p>
+<p>
+	Задание не создано</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22990" name="Создание задания с описанием длиной 1500 символов (кэ)">
+	<node_order><![CDATA[46]]></node_order>
+	<externalid><![CDATA[7_kmnrm-82]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project&nbsp;</div>
+<div>
+	2. Тестовый пользователь test@test.ru. Пароль для входа: isthisatest?&nbsp;</div>
+<div>
+	3. Пользователь залогинен.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения</div>
+<div>
+	Тестовое название задания: &quot;Разработать разработку&quot;</div>
+<div>
+	Тестовое описание задания: <i>{здесь должен быть текст длиной 1500 символов с учетом пробелов}</i></div>
+<div>
+	Тестовая цена за задание (рублей): 1000</div>
+<div>
+	Рубрика: &quot;Разработка и IT&quot;&nbsp;</div>
+<div>
+	Подрубрика: &quot;Компьютерная и IT помощь&quot;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Основная задача&quot;&nbsp;ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое название задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое описание задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено тестовое описание задания.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Цена не более&quot; ввести тестовую цену за задание.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В поле введено значение тестовой цены за задание.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на поле &quot;Выберите рубрику&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Рыскрылся выпадающий список.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать рубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	В выпадающем списке осталась выбранной рубрика. Появился выпадающий список c подрубриками &quot;Выберите рубрику&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Выбрать подрубрику.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Во втором выпадающем списке осталась выбранной подрубрика.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Кликнуть на кнопке &quot;Разместить&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Пользователь перешел на страницу https://kwork.ru/manage_projects</div>
+<div>
+	В разделе &quot;Мои проекты&quot; появилось созданное задание с указанным названием и ценой.</div>
+<div>
+	У проекта появился URL-адрес.&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22999" name="Создание задания с описанием длиной 1501 символов (кэ)">
+	<node_order><![CDATA[47]]></node_order>
+	<externalid><![CDATA[7_kmnrm-83]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<div>
+	1. http://kwork.ru/new_project</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Данные для заполнения:</div>
+<div>
+	&nbsp;</div>
+<div>
+	Тестовое описание:&nbsp;<em>{здесь должен быть текст длиной 1501 символов}</em></div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	В поле &quot;Детальное описание задачи&quot; ввести тестовое название задания.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Описание усекается до длины 1500 символов сразу же после введения 1501-го символа.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
